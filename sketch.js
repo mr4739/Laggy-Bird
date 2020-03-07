@@ -173,7 +173,7 @@ function keyPressed() {
         lagStart = frameCount;
     }
     // SPACEBAR
-    if (keyCode == 32 && (mode != Mode.GAMEOVER || mode != Mode.START)) {
+    if (keyCode == 32 && (mode != Mode.GAMEOVER && mode != Mode.START)) {
         bird.jump();
         jumpSnd.play();
     }
